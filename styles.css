@@ -99,3 +99,63 @@ section:hover {
 nav a {
     transition: background-color 0.3s;
 }
+.contact-form {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+   padding: 10px;
+   border: 1px solid #ccc;
+   transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+   border-color: #333;
+   outline: none;
+}
+
+.contact-form input[type="submit"] {
+   background-color: #333;
+   color: white;
+   border: none;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+   background-color: #555;
+}
+
+nav ul {
+   display: flex;
+   flex-direction: row;
+   gap: 15px;
+}
+
+main {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+   body {
+      min-width: 320px;
+   }
+}
+
+@media screen and (min-width: 769px) {
+   body {
+      min-width: 768px;
+   }
+}
+
+@media screen and (min-width: 1024px) {
+   body {
+      min-width: 1024px;
+   }
+}
